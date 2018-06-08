@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="discountStrategy" class="org.example.greeting.services.BasicDiscountStrategy" />
+	<bean id="" class="org.example.greeting.models.BasicProduct">
+		<!-- Properties -->
+		<!-- <property name="discountStrategy" ref="discountStrategy" /> -->
+		<!-- Constructor -->	
+		<constructor-arg ref = "discountStrategy"/>
+	</bean>
+
+</beans>
